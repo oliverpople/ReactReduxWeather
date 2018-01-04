@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchWeather } from '../actions/index';
 
-export default class SearchBar extends Component {
+class SearchBar extends Component {
   constructor(props) {
     super(props);
 
     this.state = { term: '' }
 
     this.onInputChnage = this.onInputChnage.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
   onInputChnage(event) {
@@ -16,6 +20,8 @@ export default class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
+    this.props.fetchWeather(this.state.term);  // fetching weather data
+    this.setState({ term: '' });  // clearing search input
   }
 
   render() {
@@ -33,3 +39,10 @@ export default class SearchBar extends Component {
     );
   }
 }
+
+// hooks up action creator to container
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchWeather }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(SearchBar);
