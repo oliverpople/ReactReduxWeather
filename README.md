@@ -15,8 +15,8 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > npm install
 > npm start
 ```
-You will also need to add your own API_KEY to src/actions/index.js.
+You will also need to add your own API_KEY to src/actions/index.js file.
 
 ### Getting API key 
 
-Visit https://openweathermap.org/forecast5#name5 and register to generate your own 5 day / 3 hour forecast by City Name API.
+Visit https://openweathermap.org/forecast5#name5 and register to generate your own key for '5 day / 3 hour forecast by City Name'.
