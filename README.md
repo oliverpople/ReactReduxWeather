@@ -1,25 +1,21 @@
-# ReduxSimpleStarter
+# ReduxWeather
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+A web app that displays weather forecasts for British cities. I built this app by following Stephen Grider's Udemy course: https://github.com/StephenGrider/ReduxSimpleStarter
+
+### UI
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
+> git clone https://github.com/oliverpople/ReduxWeather.git
+> cd ReduxWeather
 > npm install
 > npm start
 ```
+You will also need to add your own API_KEY to src/actions/index.js.
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+### Getting API key 
 
-```
-> npm install
-> npm start
-```
+Visit https://openweathermap.org/forecast5#name5 and register to generate your own 5 day / 3 hour forecast by City Name API.
