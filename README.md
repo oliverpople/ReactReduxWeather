@@ -7,7 +7,7 @@ A web app that displays weather forecasts for British cities. I built this app t
 
 ### Getting Started
 
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Checkout this repo, install dependencies, then start with the following:
 
 ```
 > git clone https://github.com/oliverpople/ReduxWeather.git
